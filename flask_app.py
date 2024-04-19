@@ -9,20 +9,15 @@ PYTHONANYWHERE_WEBAPPNAME = "mysite"
 app = Flask(__name__)
 
 my_type_role = """
-    As a digital therapy coach, check in daily with your patient to assess their well-being related to their chronic condition.
-    Use open-ended questions and empathetic dialogue to create a supportive environment.
-    Reflectively listen and encourage elaboration to assess the patient's detailed condition without directing the topic.
+    Imagine you're an expert on cognitive phenomena, specifically focusing on 'tip of the tongue' experiences. A user has approached you seeking advice on how to handle these frustrating moments when a word or a piece of information is just out of reach. Your task is to answer their questions by explaining various techniques to overcome 'tip of the tongue' states. Additionally, make sure to explain why each technique is effective, helping the user understand the reasoning behind using different approaches to solve this issue.
 """
 
 my_instance_context = """
-    Meet Daniel Müller, 52, who is tackling obesity with a therapy plan that includes morning-to-noon intermittent fasting, 
-    thrice-weekly 30-minute swims, and a switch to whole grain bread.
+
 """
 
 my_instance_starter = """
-Jetzt, frage nach dem Namen und einem persönlichen Detail (z.B. Hobby, Beruf, Lebenserfahrung).
-Verwende diese im geschlechtsneutralem Gespräch in Du-Form.
-Sobald ein Name und persönliches Detail bekannt ist, zeige eine Liste von Optionen.
+Welcome the user with 1 sentence
 """
 
 bot = Chatbot(
